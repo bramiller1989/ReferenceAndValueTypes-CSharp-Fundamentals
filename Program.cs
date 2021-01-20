@@ -6,7 +6,10 @@ namespace ReferenceAndValueTypes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var a = 10;
+            var b = a;
+            b++;
+            Console.WriteLine(string.Format("a: {0}, b: {1}", a, b));
         }
     }
 }
