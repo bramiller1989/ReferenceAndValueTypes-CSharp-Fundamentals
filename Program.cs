@@ -2,6 +2,11 @@
 
 namespace ReferenceAndValueTypes
 {
+    public class Person
+    {
+        public int Age;
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -15,7 +20,16 @@ namespace ReferenceAndValueTypes
             var array2 = array1;
             array2[0] = 0;
             Console.WriteLine(string.Format("array1[0]: {0}, array2[0]: {1}", array1[0], array2[0]));
+        }
 
+        public static void Increment(int number)
+        {
+            number += 10;
+        }
+
+        public static void MakeOld(Person person)
+        {
+            person.Age += 10;
         }
     }
 }
