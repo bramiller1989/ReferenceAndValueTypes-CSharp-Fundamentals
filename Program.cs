@@ -20,6 +20,10 @@ namespace ReferenceAndValueTypes
             var array2 = array1;
             array2[0] = 0;
             Console.WriteLine(string.Format("array1[0]: {0}, array2[0]: {1}", array1[0], array2[0]));
+
+            var number = 1;
+            Increment(number);
+            Console.WriteLine(number);
         }
 
         public static void Increment(int number)
